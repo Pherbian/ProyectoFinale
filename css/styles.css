@@ -19,8 +19,7 @@ a{
     font-style: italic;
     background-color: black;
     color: white;
-    margin-left: 3.7rem;
-    margin-right: 4rem;
+ 
     text-align: center;
 }
 
@@ -32,16 +31,45 @@ a{
     margin-top: 5rem;
 }
 
-.navegacion li{
+#navegacion {
+   
+   justify-content: center;
+    color: white;
+   background-color: black;
+   display: flex;
+   height: 60px;
+   gap: .8rem;
+   transition: all 2s;
+}
+
+
+
+#navegacion li{
 
     display: inline;
-    margin-left: 5rem;
-    font-size: 2rem;
-    text-align: center;
+  margin-left: 3rem;
+    font-size: 2rem; 
+  
     font-family:'Poppins', sans-serif;
-    
-    
+  
 }
+
+#navegacion li:hover {
+    
+    height: 60px;
+    transform: scale(1.05);
+    }
+    
+ @media screen and (max-width: 399px) {
+ #navegacion {
+   flex-direction: column;
+       }
+    }
+    
+    #navegacion li {
+       background-color: black;
+       padding: .3rem 1rem;
+      }
 
 .parrafo1 {
     color: rgb(61, 173, 46);
