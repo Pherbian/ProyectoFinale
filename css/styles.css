@@ -7,9 +7,25 @@
     
 }
 
-a{
+a {
     text-decoration: none;
-    color: blanchedalmond;
+    color: white;
+}
+
+#grilla-index {
+    display: grid;
+    grid-template-areas:
+   "cabecera cabecera cabecera"
+   "productos productos productos"
+   "banner banner banner"
+   "footer footer footer"
+   "aside aside aside";
+   align-items: stretch;
+
+  
+   
+
+
 }
 
 
@@ -18,7 +34,7 @@ a{
    display: flex;
    justify-content: space-around;
    align-items: center;
-   margin-bottom: 4rem;
+ 
 }
 
 @media screen and (max-width: 767px) {
@@ -34,7 +50,8 @@ a{
     font-style: italic;
     background-color: black;
     color: white;
- 
+    margin-top: 50px;
+    
     text-align: center;
 }
 
@@ -63,6 +80,7 @@ a{
 
     display: inline;
   margin-left: 3rem;
+  margin-right: 3rem;
     font-size: 2rem; 
   text-align: center;
     font-family:'Poppins', sans-serif;
@@ -87,7 +105,8 @@ a{
        padding: .3rem 1rem;
       }
 
-.parrafo1 {
+.parrafo1 p {
+    grid-area: productos;
     color: rgb(61, 173, 46);
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -95,6 +114,9 @@ a{
     margin-top: 3rem;
     font-weight: 700;
     font-size: 1.4rem;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    
 
 }
 
@@ -144,10 +166,15 @@ a{
     height: 500px;
 }
 
-.footer{
+.lateral {
+    grid-area: aside;
+    color: red;
+}
+
+#footer{
+    grid-area: footer;
     font-size: 2rem;
     text-align: center;
     color: beige;
-    margin-top: 20rem;
 }
 
