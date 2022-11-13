@@ -12,6 +12,21 @@ a{
     color: blanchedalmond;
 }
 
+
+#header {
+    grid-area: cabecera;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 767px) {
+    #header {
+       flex-direction: column;
+    }
+ }
+
 .titulo {
 
     font-size: 4rem;
@@ -49,15 +64,16 @@ a{
     display: inline;
   margin-left: 3rem;
     font-size: 2rem; 
-  
+  text-align: center;
     font-family:'Poppins', sans-serif;
   
 }
 
 #navegacion li:hover {
     
-    height: 60px;
+    height: 40px;
     transform: scale(1.05);
+    text-decoration: none;
     }
     
  @media screen and (max-width: 399px) {
