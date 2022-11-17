@@ -94,6 +94,7 @@ a {
     @media screen and (min-width: 767px) {
         #navegacion {
             flex-direction: row;
+            text-align: center;
         }
             
         }
@@ -103,7 +104,7 @@ a {
    
 .parrafo1 p {
     
-    color: orange;
+    color:violet ;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-family: 'Quicksand', sans-serif;
@@ -188,3 +189,14 @@ a {
     width: 400px;
 }
 
+.boton-mas {
+   
+    width: 200px;
+    align-items: center;
+}
+
+#carousel img {
+    height: 800px;
+    width: 600px;
+    display: flex;
+}
