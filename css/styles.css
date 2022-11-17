@@ -33,7 +33,7 @@ a {
  
 }
 
-@media screen and (min-width: 399px) {
+@media screen and (min-width: 576px) {
     #header {
        flex-direction: row;
     }
@@ -91,7 +91,7 @@ a {
     text-decoration: none;
     }
 
-    @media screen and (min-width: 399px) {
+    @media screen and (min-width: 576px) {
         #navegacion {
             flex-direction: row;
         }
