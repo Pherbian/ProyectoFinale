@@ -1,3 +1,5 @@
+img {max-width: 100%;}
+ 
 .todosa{
     background-image: url(../img/observatorio+cielo.jpg);
     
@@ -10,34 +12,24 @@
 a {
     text-decoration: none;
     color: white;
+    text-align: center;
 }
 
-#grilla-index {
-    display: grid;
-    grid-template-areas:
-   "cabecera cabecera cabecera"
-   "productos productos productos"
-   "banner banner banner"
-   "footer footer footer"
-   "aside aside aside";
-   align-items: stretch;
-
-  
-   
-
-
+.card {
+    background: none;
 }
-
 
 #header {
-    grid-area: cabecera;
+    
    display: flex;
-   justify-content: space-around;
    align-items: center;
+   max-width: 100%;
+   background-color: black;
+   flex-direction: column;
  
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 992px) {
     #header {
        flex-direction: column;
     }
@@ -50,9 +42,9 @@ a {
     font-style: italic;
     background-color: black;
     color: white;
-    margin-top: 50px;
     
-    text-align: center;
+    
+    
 }
 
 .titulo2{
@@ -67,13 +59,14 @@ a {
    
    justify-content: center;
     color: white;
-   background-color: black;
+   
    display: flex;
    height: 60px;
    gap: .8rem;
    transition: all 2s;
-}
+   background-size: cover;
 
+}
 
 
 #navegacion li{
@@ -84,7 +77,7 @@ a {
     font-size: 2rem; 
   text-align: center;
     font-family:'Poppins', sans-serif;
-  
+    padding: .3rem 2rem;
 }
 
 #navegacion li:hover {
@@ -93,29 +86,21 @@ a {
     transform: scale(1.05);
     text-decoration: none;
     }
+  
     
- @media screen and (max-width: 399px) {
- #navegacion {
-   flex-direction: column;
-       }
-    }
     
-    #navegacion li {
-       background-color: black;
-       padding: .3rem 1rem;
-      }
-
+   
 .parrafo1 p {
-    grid-area: productos;
-    color: rgb(61, 173, 46);
+    
+    color: orange;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-family: 'Quicksand', sans-serif;
     margin-top: 3rem;
     font-weight: 700;
-    font-size: 1.4rem;
-    grid-template-columns: 5fr 1fr;
-    grid-template-rows: 5fr 1fr;
+    font-size: 2.8rem;
+    
+    
     
 
 }
@@ -166,15 +151,29 @@ a {
     height: 500px;
 }
 
-.lateral {
-    grid-area: aside;
-    color: red;
-}
-
 #footer{
-    grid-area: footer;
+ 
     font-size: 2rem;
     text-align: center;
     color: beige;
+}
+
+.cards-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+@media screen and (min-width: 992px) {
+.cards-index {
+    flex-direction: row;
+}
+    
+}
+
+.cards-index img {
+    height: 400px;
+    width: 400px;
 }
 
