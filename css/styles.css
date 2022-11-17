@@ -110,7 +110,7 @@ a {
     font-family: 'Quicksand', sans-serif;
     margin-top: 3rem;
     font-weight: 700;
-    font-size: 2.3rem;
+    font-size: 2rem;
     
     
     
@@ -155,6 +155,8 @@ a {
 
 .formulario{
     text-align: center;
+   
+    
     
 }
 
@@ -199,4 +201,15 @@ a {
     height: 800px;
     width: 600px;
     display: flex;
+}
+
+.g-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-label {
+
+    color: white
 }
