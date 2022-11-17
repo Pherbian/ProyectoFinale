@@ -1,7 +1,7 @@
 img {max-width: 100%;}
  
 .todosa{
-    background-image: url(../img/observatorio+cielo.jpg);
+    background-image: url(../img/fondo2jpeg.jpeg);
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +12,11 @@ img {max-width: 100%;}
 a {
     text-decoration: none;
     color: white;
-    text-align: center;
+   
+}
+
+.logo {
+    height: 5rem;
 }
 
 .card {
@@ -29,19 +33,21 @@ a {
  
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 399px) {
     #header {
-       flex-direction: column;
+       flex-direction: row;
     }
  }
 
 .titulo {
 
-    font-size: 4rem;
+    font-size: 2rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     background-color: black;
     color: white;
+    margin-left: 0.5rem;
+    text-align: center;
     
     
     
@@ -58,26 +64,24 @@ a {
 #navegacion {
    
    justify-content: center;
-    color: white;
-   
+   color: white;
    display: flex;
-   height: 60px;
-   gap: .8rem;
-   transition: all 2s;
-   background-size: cover;
+   flex-direction: column;
+   
 
 }
 
 
 #navegacion li{
 
-    display: inline;
-  margin-left: 3rem;
-  margin-right: 3rem;
+    display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
     font-size: 2rem; 
   text-align: center;
     font-family:'Poppins', sans-serif;
-    padding: .3rem 2rem;
+    padding: .2rem 1rem;
+   
 }
 
 #navegacion li:hover {
@@ -86,9 +90,16 @@ a {
     transform: scale(1.05);
     text-decoration: none;
     }
+
+    @media screen and (min-width: 399px) {
+        #navegacion {
+            flex-direction: row;
+        }
+            
+        }
+     
   
-    
-    
+     
    
 .parrafo1 p {
     
@@ -98,7 +109,7 @@ a {
     font-family: 'Quicksand', sans-serif;
     margin-top: 3rem;
     font-weight: 700;
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     
     
     
