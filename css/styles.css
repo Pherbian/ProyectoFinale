@@ -1,7 +1,7 @@
 img {max-width: 100%;}
  
-.todosa{
-    background-image: url(../img/fondo2jpeg.jpeg);
+.body{
+    background-image: url(../img/153316.jpg);
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,12 +39,12 @@ a {
     }
  }
 
-.titulo {
+.navbar-brand {
 
     font-size: 2rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
-    background-color: black;
+   
     color: white;
     margin-left: 0.5rem;
     text-align: center;
@@ -61,26 +61,29 @@ a {
     margin-top: 5rem;
 }
 
-#navegacion {
+.navbar {
    
    justify-content: center;
    color: white;
    display: flex;
    flex-direction: column;
+   background-color: black;
+   max-width: 100%;
    
 
 }
 
 
-#navegacion li{
+.navbar li{
 
     display: flex;
   margin-left: 1rem;
   margin-right: 1rem;
-    font-size: 2rem; 
+    font-size: 1.6rem; 
   text-align: center;
     font-family:'Poppins', sans-serif;
     padding: .2rem 1rem;
+    max-width: 100%;
    
 }
 
@@ -92,7 +95,7 @@ a {
     }
 
     @media screen and (min-width: 767px) {
-        #navegacion {
+        .navbar {
             flex-direction: row;
             text-align: center;
         }
@@ -213,3 +216,14 @@ a {
 
     color: white
 }
+
+.card {
+    color: white;
+    align-items: center;
+}
+
+.card img {
+    max-height: 300px;
+    max-width: 300px;
+}
+
