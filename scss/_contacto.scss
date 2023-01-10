@@ -4,3 +4,24 @@
   .commentBox {
     width: 55px;
     height: 500px; }
+
+    .g-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .form-label {
+  
+      color: white
+  }
+  
+  .card {
+      color: white;
+      align-items: center;
+  }
+  
+  .card img {
+      max-height: 300px;
+      max-width: 300px;
+  }

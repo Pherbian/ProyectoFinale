@@ -1,0 +1,120 @@
+img {max-width: 100%;}
+
+.body {
+    background-image: url(../img/153316.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+   
+}
+
+.logo {
+    height: 5rem;
+}
+
+.card {
+    background: none;
+}
+
+#header {
+    
+   display: flex;
+   align-items: center;
+   max-width: 100%;
+   background-color: black;
+   flex-direction: column;
+ 
+}
+
+@media screen and (min-width: 767px) {
+    #header {
+       flex-direction: row;
+    }
+ }
+
+ .body {
+    background-image: url(../img/153316.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+   
+}
+
+.logo {
+    height: 5rem;
+}
+
+
+
+.navbar-brand {
+
+    font-size: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+   
+    color: red;
+    margin-left: 0.5rem;
+    text-align: center;
+    max-width: 30%;
+    text-decoration: none;
+    
+    
+    
+}
+
+
+.parrafo1 p {
+    
+    color:violet ;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 3rem;
+    font-weight: 700;
+    font-size: 2rem;
+    
+    
+    
+
+}
+
+.parrafo2{
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+
+
+    
+}
+.parrafo2 p{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+#footer{
+ 
+    font-size: 2rem;
+    text-align: center;
+    color: beige;
+}
