@@ -1,6 +1,11 @@
+
+@import "galeria";
+@import "contacto";
+
 img {max-width: 100%;}
- 
-.body{
+
+
+.body {
     background-image: url(../img/153316.jpg);
     
     background-repeat: no-repeat;
@@ -8,6 +13,8 @@ img {max-width: 100%;}
     background-position: center;
     
 }
+
+
 
 a {
     text-decoration: none;
@@ -45,9 +52,11 @@ a {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
    
-    color: white;
+    color: red;
     margin-left: 0.5rem;
     text-align: center;
+    max-width: 30%;
+    text-decoration: none;
     
     
     
@@ -194,11 +203,7 @@ a {
     align-items: center;
 }
 
-#carousel img {
-    height: 800px;
-    width: 600px;
-    display: flex;
-}
+
 
 .g-3 {
     display: flex;
@@ -219,4 +224,9 @@ a {
 .card img {
     max-height: 300px;
     max-width: 300px;
+}
+
+
+.mainImage {
+    max-width: 100%;
 }

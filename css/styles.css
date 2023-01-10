@@ -24,7 +24,7 @@ a {
   background-color: black;
   flex-direction: column; }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   #header {
     flex-direction: row; } }
 
@@ -34,7 +34,9 @@ a {
   font-style: italic;
   color: white;
   margin-left: 0.5rem;
-  text-align: center; }
+  text-align: center;
+  max-width: 30%;
+  justify-content: center; }
 
 .titulo2 {
   text-align: center;
@@ -44,12 +46,13 @@ a {
   margin-top: 5rem; }
 
 .navbar {
-  justify-content: center;
+  
   color: white;
   display: flex;
   flex-direction: column;
   background-color: black;
-  max-width: 100%; }
+  max-width: 100%;
+  justify-content: center; }
 
 .navbar li {
   display: flex;
@@ -61,10 +64,6 @@ a {
   padding: .2rem 1rem;
   max-width: 100%; }
 
-@media screen and (min-width: 767px) {
-  .navbar {
-    flex-direction: row;
-    text-align: center; } }
 
 .parrafo1 p {
   color: violet;
@@ -73,7 +72,19 @@ a {
   font-family: 'Quicksand', sans-serif;
   margin-top: 3rem;
   font-weight: 700;
-  font-size: 2rem; }
+  font-size: 1.2rem; }
+
+  @media screen and (min-width: 767px) {.parrafo1 p {
+    color: violet;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 3rem;
+    font-weight: 700;
+    font-size: 2rem; } 
+  }
+    
+  
 
 .parrafo2 {
   color: white;
@@ -105,12 +116,6 @@ a {
   font-size: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-.formulario {
-  text-align: center; }
-
-.commentBox {
-  width: 55px;
-  height: 500px; }
 
 #footer {
   font-size: 2rem;
@@ -123,9 +128,7 @@ a {
   align-items: center;
   gap: 30px; }
 
-@media screen and (min-width: 992px) {
-  .cards-index {
-    flex-direction: row; } }
+
 
 .cards-index img {
   height: 400px;
@@ -134,11 +137,6 @@ a {
 .boton-mas {
   width: 200px;
   align-items: center; }
-
-#carousel img {
-  height: 800px;
-  width: 600px;
-  display: flex; }
 
 .g-3 {
   display: flex;
@@ -155,3 +153,38 @@ a {
 .card img {
   max-height: 300px;
   max-width: 300px; }
+
+#carousel img {
+  height: 800px;
+  width: 600px;
+  display: flex; }
+
+  #imagen {
+      background-image: url(../img/observatory.jpg);
+      background-position: center;
+      display: flex;
+   
+    
+}
+
+#imagen h1 {
+  text-align: center;
+  font-size: 10rem;
+  color: aqua;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+} 
+
+@media screen and (max-width: 400px) {#imagen h1  {
+  color: violet;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 3rem;
+  font-weight: 700;
+  font-size: 2rem; } 
+
+}
+
+
+
